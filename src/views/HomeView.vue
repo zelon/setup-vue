@@ -1,5 +1,5 @@
 <template>
-  <p v-html="t('message')"></p>
+  <p v-html="$t('message')"></p>
 </template>
 
 <script lang="ts">
@@ -14,15 +14,5 @@ export default defineComponent({
 
   components: {
   },
-  setup() {
-    const { t } = useI18n({
-      inheritLocale: true,
-      useScope: 'local'
-    })
-
-    // Something todo ..
-
-    return { t }
-  }
 });
 </script>
