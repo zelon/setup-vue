@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <v-btn v-for="item in zelons" :key="item">{{ item }}</v-btn>
     <v-main>
       <router-view/>
     </v-main>
@@ -14,7 +15,7 @@ export default defineComponent({
 
   data () {
     return {
-      //
+      zelons: ['a', 'b', 'c']
     }
   },
 })
